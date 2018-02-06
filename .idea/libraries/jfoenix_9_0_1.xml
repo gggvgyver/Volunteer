@@ -2,6 +2,7 @@
   <library name="jfoenix-9.0.1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../Java/ext_lib/jfoenix-9.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Java/ext_lib/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

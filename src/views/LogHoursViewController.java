@@ -122,7 +122,7 @@ public class LogHoursViewController implements Initializable, ControllerClass {
         
         try{
             //1.  Connect to the database
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/volunteer?useSSL=false", "student", "student");
+            conn = DriverManager.getConnection("jdbc:mysql://192.168.40.112:3306/Volunteers?useSSL=false", "test", "test");
             
             //2. create a String with the sql statement
             String sql =    "SELECT MONTHNAME(dateWorked), SUM(hoursWorked) " +

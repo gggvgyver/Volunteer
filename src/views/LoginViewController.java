@@ -43,10 +43,10 @@ public class LoginViewController implements Initializable {
         
         try{
             //1.  connect to the DB
-            conn = DriverManager.getConnection("jdbc:mysql://192.168.40.112:3306/volunteer?useSSL=false", "test", "test");
+            conn = DriverManager.getConnection("jdbc:mysql://192.168.40.112:3306/Volunteers?useSSL=false", "test", "test");
             
             //2.  create a query string with ? used instead of the values given by the user
-            String sql = "SELECT * FROM volunteers WHERE volunteerID = ?";
+            String sql = "SELECT * FROM volunteer WHERE volunteerID = ?";
             
             //3.  prepare the statement
             ps = conn.prepareStatement(sql);
@@ -56,6 +56,9 @@ public class LoginViewController implements Initializable {
             
             //5. execute the query
             resultSet = ps.executeQuery();
+
+            // 접속확인
+            System.out.println("접속성공");
             
             //6.  extract the password and salt from the resultSet
             String dbPassword=null;
